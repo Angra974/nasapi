@@ -3,7 +3,7 @@
 
 const NASA_BASE_API_URL = "https://api.nasa.gov/planetary/apod?api_key=";
 const USER_API_KEY = null;
-const API_KEY = USER_API_KEY || "DEMO_KEY";
+const API_KEY = (USER_API_KEY || "DEMO_KEY");
 const FETCH_URL = NASA_BASE_API_URL + API_KEY;
 const defaultPage = localStorage.getItem("defaultPage");
 
