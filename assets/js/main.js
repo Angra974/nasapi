@@ -15,7 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
     fetchUrlData(FETCH_URL, "default");
   } else {
     const info = JSON.parse(defaultPage);
-    console.log(info);
     writeApiInformations(info);
   }
 });
@@ -58,7 +57,6 @@ function fetchUrlData(url = NASA_BASE_API_URL + API_KEY, type = "fetch") {
       } else {
         writeApiInformations(data);
       }
-      console.log(data);
     })
     .catch((error) => {
       console.log(error);
